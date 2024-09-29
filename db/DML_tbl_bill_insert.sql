@@ -1,0 +1,9 @@
+INSERT INTO TESTDB.dbo.tbl_bill (title,amount,status,updated_datetime,created_datetime) VALUES
+	 (N'McDonalds',122.60,N'UNSETTLED','2024-09-27 01:55:53.41','2024-09-27 01:55:53.41'),
+	 (N'Damascus shwarma',93.80,N'UNSETTLED','2024-09-27 01:56:40.277','2024-09-27 01:56:40.277'),
+	 (N'Bumbung',72.20,N'UNSETTLED','2024-09-27 01:58:17.87','2024-09-27 01:58:17.87'),
+	 (N'Piccadilly',136.10,N'UNSETTLED','2024-09-27 01:58:17.873','2024-09-27 01:58:17.873'),
+	 (N'mamak',78.30,N'UNSETTLED','2024-09-27 01:58:44.77','2024-09-27 01:58:44.77'),
+	 (N'Badminton night',80.00,N'UNSETTLED','2024-09-27 09:55:53.0','2024-09-27 09:55:53.0'),
+	 (N'Oversea dine',467.00,N'UNSETTLED','2024-09-27 09:55:53.0','2024-09-27 09:55:53.0'),
+	 (N'KFC',86.80,N'UNSETTLED',NULL,NULL);
