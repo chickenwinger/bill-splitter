@@ -1,0 +1,44 @@
+{
+	"info": {
+		"_postman_id": "54e1dd9f-f365-49f2-8831-ac76e3a59434",
+		"name": "Bill Splitter APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "37138552"
+	},
+	"item": [
+		{
+			"name": "Bill - Add",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Successful POST request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Badminton night\",\n    \"amount\": 80,\n    \"status\": \"UNSETTLED\",\n    \"updatedDatetime\": \"2024-09-27 01:55:53.410\",\n    \"createdDatetime\": \"2024-09-27 01:55:53.410\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/bills",
+				"description": "This is a POST request, submitting data to an API via the request body. This request submits JSON data, and the data is reflected in the response.\n\nA successful POST request typically returns a `200 OK` or `201 Created` response code."
+			},
+			"response": []
+		}
+	]
+}
