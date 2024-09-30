@@ -1,6 +1,8 @@
 package com.ckw.billSplitter.model;
 
 import jakarta.persistence.*;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedDate;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
@@ -24,9 +26,11 @@ public class BillModel {
     @Column(name = "status")
     private String status;
 
+    @LastModifiedDate
     @Column(name = "updated_datetime")
     private Timestamp updatedDatetime;
 
+    @CreatedDate
     @Column(name = "created_datetime")
     private Timestamp createdDatetime;
 

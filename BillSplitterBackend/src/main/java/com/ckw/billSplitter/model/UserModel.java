@@ -1,8 +1,6 @@
 package com.ckw.billSplitter.model;
 
 import jakarta.persistence.*;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 import java.sql.Timestamp;
 import java.util.Set;
